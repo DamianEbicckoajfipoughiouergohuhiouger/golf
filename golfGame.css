@@ -1,0 +1,35 @@
+.golf-background{
+
+background-image: url("golf-bkg.jpeg");
+background-repeat: no-repeat;
+background-size: cover;
+font-size: larger;
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+img{
+text-align: center;
+margin-top: 10%;
+width: 400px;
+height: 400px;
+border-radius: 50%;
+position: absolute;
+left: 35%;
+margin-bottom: 15px;
+
+}
+#btn{
+width: 8vw;
+height: 40px;
+position: absolute;
+bottom: 15%;
+background: #e9e8ec;
+border-radius: 5px;
+margin-top: 10vw;
+margin-left: 45vw;
+}
+
+#btn:hover {
+  border: 2px solid #333;
+  background: #dab317;
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Popups</title>
+    <link rel="stylesheet" href="golfGame.css">
+</head>
+
+<body class="golf-background">
+    
+    <img src="#" id="img">
+    <input type="button" value="Play Again" id="btn" onclick="window.location.reload(true)">
+<
+
+    <script>
+        document.body.style.backgroundImage = "url('https://www.svenskgolf.se/app/uploads/2022/03/media-GettyImages-472810114-1.jpg')";
+        var par1 = window.prompt("Which Par Course?:");
+        var par = parseInt(par1);
+
+        var strokes1 = window.prompt("How many strokes were played?:");
+        var strokes = parseInt(strokes1);
+        
+        let result = document.getElementById("img");
+
+        if (strokes <=0) {
+            result.src = "https://cdn.discordapp.com/attachments/893430321100521533/1027910741711409183/unknown.png";
+
+
+
+        }
+        else if (par <=0) {  result.src = "https://cdn.discordapp.com/attachments/893430321100521533/1027910741711409183/unknown.png";}
+        else if (strokes == 1) {
+            result.src = "https://cdn.discordapp.com/attachments/893430321100521533/1027898946141565009/unknown.png";
+        } else if (strokes <= par - 2) {
+            result.src = "https://cdn.discordapp.com/attachments/893430321100521533/1027897311721947166/unknown.png";
+        } else if (strokes === par - 1) {
+            result.src = "https://t3.ftcdn.net/jpg/02/20/02/80/360_F_220028094_urKtM42uLCwBItQSqA0nOwPJOP3AdBJO.jpg";
+        } else if (strokes === par && strokes != undefined) {
+            result.src = "https://cdn.discordapp.com/attachments/893430321100521533/1027896002209914880/unknown.png";
+        } else if (strokes === par + 1) {
+            result.src = "https://image.shutterstock.com/image-photo/bogey-wording-tee-golf-ball-600w-601814816.jpg";
+        } else if (strokes === par + 2) {
+            result.src = "https://www.rookieroad.com/img/golf/golf-scoring-rules.png";
+        } else if (strokes >= par + 3) {
+            result.src = "https://cdn.shopify.com/s/files/1/1280/2597/files/2021_002.png?v=1629509218";
+        } else {
+            alert("Invalid input")
+        }
+    </script>
+
+</body>
+
+</html>
